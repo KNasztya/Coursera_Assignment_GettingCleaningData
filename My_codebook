@@ -1,0 +1,88 @@
+DATA DICTIONARY FOR FINAL TIDY DATASET (dgo)
+with the average of each selected measurement for each activity and each subject
+
+You find the initial dataset and description:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+My dataset includes the following 68 variables:
+[1] "subject"
+    Integer from 1 to 30 indicating the subject who performed the activity
+[2] "activity_label"
+    Label indicating the activity of the 6 following activities:
+    WALKING
+    WALKING_UPSTAIRS
+    WALKING_DOWNSTAIRS
+    SITTING
+    STANDING
+    LAYING
+
+From [3] to [68] you find the mean of the origin measurement for every subject and activity combination.
+The name of these variables are constructed from the original variable names starting with "Mean_"
+and "-" is substituded with "_", and "()" are omitted from the original names:
+[3] "Mean_tBodyAcc_mean_X"          
+[4] "Mean_tBodyAcc_mean_Y"          
+[5] "Mean_tBodyAcc_mean_Z"          
+[6] "Mean_tBodyAcc_std_X"           
+[7] "Mean_tBodyAcc_std_Y"           
+[8] "Mean_tBodyAcc_std_Z"           
+[9] "Mean_tGravityAcc_mean_X"       
+[10] "Mean_tGravityAcc_mean_Y"       
+[11] "Mean_tGravityAcc_mean_Z"       
+[12] "Mean_tGravityAcc_std_X"        
+[13] "Mean_tGravityAcc_std_Y"        
+[14] "Mean_tGravityAcc_std_Z"        
+[15] "Mean_tBodyAccJerk_mean_X"      
+[16] "Mean_tBodyAccJerk_mean_Y"      
+[17] "Mean_tBodyAccJerk_mean_Z"      
+[18] "Mean_tBodyAccJerk_std_X"       
+[19] "Mean_tBodyAccJerk_std_Y"       
+[20] "Mean_tBodyAccJerk_std_Z"       
+[21] "Mean_tBodyGyro_mean_X"         
+[22] "Mean_tBodyGyro_mean_Y"         
+[23] "Mean_tBodyGyro_mean_Z"         
+[24] "Mean_tBodyGyro_std_X"          
+[25] "Mean_tBodyGyro_std_Y"          
+[26] "Mean_tBodyGyro_std_Z"          
+[27] "Mean_tBodyGyroJerk_mean_X"     
+[28] "Mean_tBodyGyroJerk_mean_Y"     
+[29] "Mean_tBodyGyroJerk_mean_Z"     
+[30] "Mean_tBodyGyroJerk_std_X"      
+[31] "Mean_tBodyGyroJerk_std_Y"      
+[32] "Mean_tBodyGyroJerk_std_Z"      
+[33] "Mean_tBodyAccMag_mean"         
+[34] "Mean_tBodyAccMag_std"          
+[35] "Mean_tGravityAccMag_mean"      
+[36] "Mean_tGravityAccMag_std"       
+[37] "Mean_tBodyAccJerkMag_mean"     
+[38] "Mean_tBodyAccJerkMag_std"      
+[39] "Mean_tBodyGyroMag_mean"        
+[40] "Mean_tBodyGyroMag_std"         
+[41] "Mean_tBodyGyroJerkMag_mean"    
+[42] "Mean_tBodyGyroJerkMag_std"     
+[43] "Mean_fBodyAcc_mean_X"          
+[44] "Mean_fBodyAcc_mean_Y"          
+[45] "Mean_fBodyAcc_mean_Z"          
+[46] "Mean_fBodyAcc_std_X"           
+[47] "Mean_fBodyAcc_std_Y"           
+[48] "Mean_fBodyAcc_std_Z"           
+[49] "Mean_fBodyAccJerk_mean_X"      
+[50] "Mean_fBodyAccJerk_mean_Y"      
+[51] "Mean_fBodyAccJerk_mean_Z"      
+[52] "Mean_fBodyAccJerk_std_X"       
+[53] "Mean_fBodyAccJerk_std_Y"       
+[54] "Mean_fBodyAccJerk_std_Z"       
+[55] "Mean_fBodyGyro_mean_X"         
+[56] "Mean_fBodyGyro_mean_Y"         
+[57] "Mean_fBodyGyro_mean_Z"         
+[58] "Mean_fBodyGyro_std_X"          
+[59] "Mean_fBodyGyro_std_Y"          
+[60] "Mean_fBodyGyro_std_Z"          
+[61] "Mean_fBodyAccMag_mean"         
+[62] "Mean_fBodyAccMag_std"          
+[63] "Mean_fBodyBodyAccJerkMag_mean" 
+[64] "Mean_fBodyBodyAccJerkMag_std"  
+[65] "Mean_fBodyBodyGyroMag_mean"    
+[66] "Mean_fBodyBodyGyroMag_std"     
+[67] "Mean_fBodyBodyGyroJerkMag_mean"
+[68] "Mean_fBodyBodyGyroJerkMag_std"
+
