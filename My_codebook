@@ -1,10 +1,10 @@
-DATA DICTIONARY FOR FINAL TIDY DATASET (dgo)
+DATA DICTIONARY FOR FINAL TIDY DATASET (dataset called: dgo)
 with the average of each selected measurement for each activity and each subject
 
 You find the initial dataset and description:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-My dataset includes the following 68 variables:
+My dataset includes 180 observations of the following 68 variables:
 [1] "subject"
     Integer from 1 to 30 indicating the subject who performed the activity
 [2] "activity_label"
@@ -17,6 +17,7 @@ My dataset includes the following 68 variables:
     LAYING
 
 From [3] to [68] you find the mean of the origin measurement for every subject and activity combination.
+Units are unchanged.
 The name of these variables are constructed from the original variable names starting with "Mean_"
 and "-" is substituded with "_", and "()" are omitted from the original names:
 [3] "Mean_tBodyAcc_mean_X"          
